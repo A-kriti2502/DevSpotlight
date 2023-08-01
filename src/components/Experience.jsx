@@ -1,5 +1,4 @@
 import React from 'react';
-
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -62,7 +61,8 @@ const Experience = () => {
       ];
   return (
     
-    <div className=' mt-15 h-5/6 w-full  bg-gradient-to-b to-black via-black from-gray-900 text-white p-9'>
+    <div name = "experience"
+    className=' mt-15 h-5/6 w-full  bg-gradient-to-b to-black via-black from-gray-900 text-white p-9'>
       <div className='h-5/6 w-5/6 mx-auto flex flex-col items-center'>
         
         <div >

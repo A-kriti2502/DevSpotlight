@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
+import code from "../assets/portfolio/code.png";
+import blog from "../assets/portfolio/blog.png";
+import marvel from "../assets/portfolio/marvel.png";
+import resume from "../assets/portfolio/resume.png";
+import RPS from "../assets/portfolio/RPS.png";
+import weather from "../assets/portfolio/weather.png";
 
 const Projects = () => {
     const [currentTab, setCurrentTab] = useState("1");
@@ -16,22 +16,27 @@ const Projects = () => {
         content: [
           {
             title: 'ComicVerse',
-            src: arrayDestruct,
+            src: marvel,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           },
           {
             title: 'RapidResume',
-            src: navbar,
+            src: resume,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           },
           {
             title: 'DevDiaries',
-            src: installNode,
+            src: blog,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           },
           {
             title: 'RPS Battle',
-            src: arrayDestruct,
+            src: RPS,
+            Glink:"https://github.com/A-kriti2502/ComicVerse"
+          },
+          {
+            title: 'Weather Tracker',
+            src: weather,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           }
         ]
@@ -42,22 +47,22 @@ const Projects = () => {
         content: [
           {
             title: 'AI-HandSigns-Battle',
-            src: reactParallax,
+            src: code,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           },
           {
             title: 'InfluencerGo',
-            src: reactSmooth,
+            src: code,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           },
           {
             title: 'HealthProSpec',
-            src: reactWeather,
+            src: code,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           },
           {
             title: 'Marco',
-            src: reactWeather,
+            src: code,
             Glink:"https://github.com/A-kriti2502/ComicVerse"
           },
         ]
@@ -72,7 +77,8 @@ const Projects = () => {
     };
     
     return (
-      <div className=" w-full bg-gradient-to-b from-black via-black to-gray-900 p-4  text-white">
+      <div name="portfolio"
+      className="w-full bg-gradient-to-b from-black via-black to-gray-900 p-4  text-white">
         <div className='h-5/6 w-5/6 mx-auto flex flex-col items-center gap-7'>
           <div className='text-center'>
             <h2 className='font-bold text-5xl'>Projects</h2>

@@ -2,16 +2,17 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='h-screen w-full bg-gradient-to-b to-black via-black from-gray-900 p-4  text-white'>
+    <div name="contact"
+    className=' w-full bg-gradient-to-b to-black via-black from-gray-900 p-4  text-white'>
       <div className='h-2/4 w-full flex flex-col justify-end items-center gap-6'>
         <div className='flex flex-col'>
           <h2 className='font-bold text-5xl text-center'>Contact me</h2>
           <p className="text-gray-500 py-4 max-w-md">Submit the form below to get in touch with me</p>
         </div>
       </div>
-      <div className='h-2/4 w-2/6 mx-auto flex justify-center items-center'>
+      <div className='h-2/4 sm:w-4/6 md:w-2/6 mx-auto flex justify-center items-center'>
           <form
-          action='/'
+          action='https://getform.io/f/4b373fbf-35af-43b3-a9f2-5f90b9c7166e'
           method='POST'
           className='flex flex-col w-full gap-4'
           >

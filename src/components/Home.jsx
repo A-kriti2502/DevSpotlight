@@ -1,9 +1,9 @@
 import React from 'react';
-import heroImage from '../assets/hero.png';
+import heroImage from '../assets/main.png';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useState , useEffect } from 'react';
 
-const Home = () => {
+const Home = ({nav , setnav}) => {
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -56,9 +56,8 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full h-6/12">
           <h4 className='text-4xl sm:text-3xl font-bold text-white'>{`I'm Aakriti`}</h4>
           <h3 className='text-white font-bold text-5xl'>{text}</h3>
-          <p className='text-gray-500 py-4 max-w-md'>I have 8 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+          <p className='text-gray-500 py-4 max-w-md'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est molestiae debitis aspernatur in quasi? 
+          Eius iusto deleniti ratione voluptates, laborum aspernatur distinctio id reprehenderit fugiat.
           </p>
           <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-red-400 to-purple-800 cursor-pointer">
@@ -70,7 +69,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=' md:h-7/12 md:w-7/12 sm:h-9/12 sm:w-9/12 z-10'>
+        <div className={`md:h-7/12 md:w-7/12 sm:h-9/12 sm:w-9/12 z-10 ${nav ? 'hidden' : 'block'}`}>
           <img src={heroImage} alt="my profile" className='mt-[-20] rounded-2xl mx-auto md:w-full animate-waving-hand'></img>
         </div>
 
