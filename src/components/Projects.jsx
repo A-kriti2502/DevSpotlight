@@ -17,27 +17,31 @@ const Projects = () => {
           {
             title: 'ComicVerse',
             src: marvel,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
+            Glink: "https://github.com/A-kriti2502/ComicVerse",
+            Llink: "",
           },
           {
             title: 'RapidResume',
             src: resume,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
+            Glink:"https://github.com/A-kriti2502/RapidResume",
+            Llink:""
           },
           {
             title: 'DevDiaries',
             src: blog,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
+            Glink:"https://github.com/A-kriti2502/DevDiaries"
           },
           {
             title: 'RPS Battle',
             src: RPS,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
+            Glink:"https://github.com/A-kriti2502/javascript-rps-playground",
+            Llink:""
           },
           {
             title: 'Weather Tracker',
             src: weather,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
+            Glink:"https://github.com/A-kriti2502/WeatherTracker",
+            Llink:""
           }
         ]
       },
@@ -48,23 +52,18 @@ const Projects = () => {
           {
             title: 'AI-HandSigns-Battle',
             src: code,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
+            Glink:"https://github.com/A-kriti2502/AI-HandSigns-Battle"
           },
           {
             title: 'InfluencerGo',
             src: code,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
+            Glink:""
           },
           {
             title: 'HealthProSpec',
             src: code,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
-          },
-          {
-            title: 'Marco',
-            src: code,
-            Glink:"https://github.com/A-kriti2502/ComicVerse"
-          },
+            Glink:"https://github.com/SHOCKWAVE07/Doceree_Hackathon"
+          }
         ]
       }
     ];
@@ -106,12 +105,15 @@ const Projects = () => {
                   <div className='flex flex-col gap-5'>
                     {/* <h2>{tab.domain}</h2> */}
                     <div className='flex flex-row gap-3 flex-wrap justify-center'>
-                      {tab.content.map(({ title, src, Glink }, k) => (
+                      {tab.content.map(({ title, src, Glink, Llink }, k) => (
                         <div key={k} className=''>
                             <div className='shadow-md rounded-lg text-center flex flex-col gap-3 hover:scale-105 duration-200'>
-                                <p>{title}</p>
+                                <p className='font-bold uppercase text-2xl'>{title}</p>
                                 <img src={src} className='h-30 w-40 md:h-60 md:w-96 project-image-sm ' alt={title}/>
-                                <a href={Glink}><button className='px-6 py-3 hover:bg-gradient-to-r from-red-400 to-purple-800 p-2 rounded-md'>Github</button></a>
+                                <div>
+                                  <a href={Glink}><button className='px-6 py-3 hover:bg-gradient-to-r from-red-400 to-purple-800 p-2 rounded-md'>Github</button></a>
+                                  {Llink && <a href={Llink}><button className='px-6 py-3 hover:bg-gradient-to-r from-red-400 to-purple-800 p-2 rounded-md'>live link</button></a>}
+                                </div>
                             </div>
                         </div>
                       ))}

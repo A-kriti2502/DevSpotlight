@@ -2,6 +2,7 @@ import React from 'react';
 import heroImage from '../assets/main.png';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useState , useEffect } from 'react';
+import { Link } from "react-scroll";
 
 const Home = ({nav , setnav}) => {
 
@@ -54,17 +55,19 @@ const Home = ({nav , setnav}) => {
       <div className="w-5/6 mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row gap-10 ">
         
         <div className="flex flex-col justify-center h-full h-6/12">
-          <h4 className='text-4xl sm:text-3xl font-bold text-white'>{`I'm Aakriti`}</h4>
+          <h4 className='text-4xl sm:text-3xl font-bold text-white'>{`I'm`}</h4>
           <h3 className='text-white font-bold text-5xl'>{text}</h3>
           <p className='text-gray-500 py-4 max-w-md'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est molestiae debitis aspernatur in quasi? 
           Eius iusto deleniti ratione voluptates, laborum aspernatur distinctio id reprehenderit fugiat.
           </p>
           <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-red-400 to-purple-800 cursor-pointer">
-              Portfolio
-              <span className='group-hover:rotate-90 duration-300'>
-                <MdOutlineKeyboardArrowRight size={25} className='ml-1'/>
-              </span>
+                <Link to="portfolio" smooth duration={800}>
+                Portfolio
+                {/* <span className='group-hover:rotate-90 duration-300'>
+                  <MdOutlineKeyboardArrowRight size={25} className='ml-1'/>
+                </span> */}
+                </Link>    
             </button>
           </div>
         </div>
