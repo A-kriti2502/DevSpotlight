@@ -15,16 +15,16 @@ const Projects = () => {
         domain: 'Development',
         content: [
           {
-            title: 'ComicVerse',
-            src: marvel,
-            Glink: "https://github.com/A-kriti2502/ComicVerse",
-            Llink: "",
-          },
-          {
             title: 'RapidResume',
             src: resume,
             Glink:"https://github.com/A-kriti2502/RapidResume",
-            Llink:""
+            Llink:"https://white-beach-0db7ba000.3.azurestaticapps.net"
+          },
+          {
+            title: 'ComicVerse',
+            src: marvel,
+            Glink: "https://github.com/A-kriti2502/ComicVerse",
+            Llink: "https://comicverse-aakriti.netlify.app/",
           },
           {
             title: 'DevDiaries',
@@ -80,8 +80,8 @@ const Projects = () => {
       className="w-full bg-gradient-to-b from-black via-black to-gray-900 p-4  text-white">
         <div className='h-5/6 w-5/6 mx-auto flex flex-col items-center gap-7'>
           <div className='text-center'>
-            <h2 className='font-bold text-5xl'>Projects</h2>
-            <p className='text-gray-500 py-4 max-w-md'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium a cumque! Assumenda!</p>
+            <h2 className='font-bold text-5xl uppercase'>Projects</h2>
+            <p className='text-gray-500 py-4 max-w-md'>Explore my latest projects</p>
           </div>
   
           <div className='flex flex-row gap-7'>

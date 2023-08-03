@@ -57,8 +57,9 @@ const Home = ({nav , setnav}) => {
         <div className="flex flex-col justify-center h-full h-6/12">
           <h4 className='text-4xl sm:text-3xl font-bold text-white'>{`I'm`}</h4>
           <h3 className='text-white font-bold text-5xl'>{text}</h3>
-          <p className='text-gray-500 py-4 max-w-md'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est molestiae debitis aspernatur in quasi? 
-          Eius iusto deleniti ratione voluptates, laborum aspernatur distinctio id reprehenderit fugiat.
+          <p className='text-gray-500 py-4 max-w-md'>
+            Hi there! I'm Aakriti, a creative developer with a passion for 
+            building innovative web and machine learning projects.
           </p>
           <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-red-400 to-purple-800 cursor-pointer">

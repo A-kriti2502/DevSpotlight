@@ -6,7 +6,7 @@ const Contact = () => {
     className=' w-full bg-gradient-to-b to-black via-black from-gray-900 p-4  text-white'>
       <div className='h-2/4 w-full flex flex-col justify-end items-center gap-6'>
         <div className='flex flex-col'>
-          <h2 className='font-bold text-5xl text-center'>Contact me</h2>
+          <h2 className='font-bold text-5xl text-center uppercase'>Contact me</h2>
           <p className="text-gray-500 py-4 max-w-md">Submit the form below to get in touch with me</p>
         </div>
       </div>

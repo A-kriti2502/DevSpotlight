@@ -66,7 +66,7 @@ const Experience = () => {
       <div className='h-5/6 w-5/6 mx-auto flex flex-col items-center'>
         
         <div >
-            <h2 className='font-bold text-5xl text-center'>Experience</h2>
+            <h2 className='font-bold text-5xl text-center uppercase'>Experience</h2>
             <p className="text-gray-500 py-4 max-w-md">These are the technologies I've worked with</p>
         </div>
         
